@@ -3,9 +3,12 @@ keybinds {
         unbind "Ctrl o" // unbind defalut switching to move session
         unbind "Ctrl h" // unbind defalut switching to move mode
     }
+    search {
+        bind "e" { EditScrollback; SwitchToMode "Normal"; }
+    }
     shared {
         // these keybindings will be present in all modes
-        bind "Alt s" { SwitchToMode "EnterSearch"; SearchInput 0; }
+        bind "Alt s" { SwitchToMode "scroll"; }
         bind "Ctrl s" { SwitchToMode "session"; }
     }
     shared_except "session"{
