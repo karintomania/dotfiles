@@ -1,0 +1,20 @@
+keybinds {
+    normal {
+        unbind "Ctrl o" // unbind defalut switching to move session
+        unbind "Ctrl h" // unbind defalut switching to move mode
+    }
+    shared {
+        // these keybindings will be present in all modes
+        bind "Alt s" { SwitchToMode "EnterSearch"; SearchInput 0; }
+        bind "Ctrl s" { SwitchToMode "session"; }
+    }
+    shared_except "session"{
+        // these keybindings will be present in all modes except "resize" and "locked"
+        unbind "Ctrl q"
+    }
+}
+
+pane_frames false
+theme "catppuccin-mocha"
+copy_command "xclip -i -selection clipboard"
+// theme "gruvbox-dark"
