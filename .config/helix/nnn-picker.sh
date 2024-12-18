@@ -8,6 +8,6 @@ if [[ -n "$paths" ]]; then
     zellij action write-chars ":open $paths"
     zellij action write 13 # send <Enter> key
     zellij action toggle-floating-panes
+    zellij action close-pane
 fi
 
-zellij action close-pane

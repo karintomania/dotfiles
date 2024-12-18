@@ -55,7 +55,8 @@ alias -s sh=zsh
 export EDITOR='nvim'
 export FZF_DEFAULT_COMMAND="find ."
 export CLICOLOR=1
-export NNN_PLUG="f:fzcd;"
+export NNN_PLUG="f:fzcd;c:cppath;"
+export NNN_OPTS="H"
 export AWS_PROFILE=transactions-dev
 
 
