@@ -19,7 +19,8 @@ C-h="jump_view_left"
 C-l="jump_view_right"
 K="hover"
 V=["select_mode", "extend_line_below"]
-C-f = ":sh zellij run -f -x 10% -y 10% --width 80% --height 80% -- zsh ~/.config/helix/nnn-picker.sh"
+# C-f = ":sh zellij run -c -f -x 10% -y 10% --width 80% --height 80% -- zsh ~/.config/helix/nnn-picker.sh"
+C-f = ":sh zellij run -c -f -x 10% -y 10% --width 80% --height 80%  -- zsh ~/.config/helix/open-from-clipboard.sh"
 
 [keys.select]
 # use system clipboard

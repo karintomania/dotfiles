@@ -1,8 +1,6 @@
+paths=$(xclip -o -selection c)
 
-# Use `nnn` in picker mode and output the selected file paths
-paths=$(nnn -p -)
-
-if [[ -n "$paths" ]]; then
+if [[ -e "$paths" ]]; then
     zellij action toggle-floating-panes
     zellij action write 27 # send <Escape> key
     zellij action write-chars ":open $paths"
