@@ -13,6 +13,8 @@ Y = "yank_joined_to_clipboard"
 R = "replace_selections_with_clipboard"
 d = ["yank_to_clipboard", "delete_selection_noyank"]
 
+D = ["select_mode", "goto_line_end", "delete_selection"]
+
 C-k = "scroll_up"
 C-j = "scroll_down"
 C-h="jump_view_left"
