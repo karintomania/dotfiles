@@ -4,6 +4,14 @@ theme="catppuccin_mocha"
 [editor.cursor-shape]
 insert="bar"
 
+[editor.whitespace.render]
+newline = "all"
+tab = "all"
+
+nbsp = "none"
+nnbsp = "none"
+space = "none"
+
 [keys.normal]
 # use system clipboard
 # p = "paste_clipboard_after"
