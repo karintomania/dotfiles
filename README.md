@@ -18,6 +18,11 @@ $ cd dotfiles
 $ stow .
 ```
 
+## Resolve conflict
+```
+stow --adopt .
+```
+
 ## How it works
 stow creates symlink in the home file, keeping the folder structure inside this repo.
 https://www.youtube.com/watch?v=y6XCebnB9gs&ab_channel=DreamsofAutonomy
