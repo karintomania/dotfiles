@@ -1,6 +1,6 @@
 # PS1='%n@%m %~$ '
-PS1='%F{green}%D{%I:%M:%S %p}%f %F{cyan}%n%f@%F{blue}%~%f$ '
-PATH="/usr/local/bin:$HOME/.local/bin/:/usr/local/go/bin:$HOME/go/bin:$PATH"
+PS1='%F{green}%D{%I:%M:%S %p}%f %F{blue}%~%f$ '
+PATH="/usr/local/bin:$HOME/.local/bin/:/usr/local/go/bin:$HOME/go/bin:$PATH:$HOME/.cargo/env"
 
 # enable plugins
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
