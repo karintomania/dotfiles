@@ -1,10 +1,32 @@
+##############
+# Languages
+##############
+
+# PHP
 [[language]]
 name = "php"
-language-servers = [ "intelephense" ]
+language-servers = [ "intelephense", "gpt" ]
 
+
+# Go
+[[language]]
+name = "go"
+language-servers = [ "gopls", "gpt" ]
+
+##############
+# LSPs
+##############
+# PHP
 [language-server.intelephense.config]
 licenceKey = "xxxxx"
 
 # [language-server.phpactor]
 # command = "phpactor"
 # args = [ "language-server" ]
+
+# GPT
+# Install from https://github.com/leona/helix-gpt
+[language-server.gpt]
+command = "helix-gpt"
+args = [ "--handler", "copilot", "--copilotApiKey",  "xxxxxx" ]
+
