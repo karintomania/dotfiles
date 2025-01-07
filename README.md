@@ -26,3 +26,7 @@ stow --adopt .
 ## How it works
 stow creates symlink in the home file, keeping the folder structure inside this repo.
 https://www.youtube.com/watch?v=y6XCebnB9gs&ab_channel=DreamsofAutonomy
+
+
+## config.toml
+`git update-index --no-assume-unchanged  .config/helix/languages.toml`
