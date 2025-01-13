@@ -60,7 +60,7 @@ function y() {
 
 alias -s sh=zsh
 
-export EDITOR='nvim'
+export EDITOR='hx'
 export FZF_DEFAULT_COMMAND="find ."
 export CLICOLOR=1
 export NNN_PLUG="f:fzcd;c:cppath;"
