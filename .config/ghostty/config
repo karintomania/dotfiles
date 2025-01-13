@@ -1,0 +1,9 @@
+# Use .deb from https://github.com/mkasberg/ghostty-ubuntu to install ghostty
+# theme = catppuccin-mocha
+theme = GruvboxDark
+font-size = 12
+
+window-theme = dark
+
+# GTK
+gtk-tabs-location = bottom
