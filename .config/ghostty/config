@@ -6,4 +6,5 @@ font-size = 12
 window-theme = dark
 
 # GTK
-gtk-tabs-location = bottom
+gtk-titlebar = false
+gtk-tabs-location = top

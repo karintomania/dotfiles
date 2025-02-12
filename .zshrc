@@ -16,6 +16,7 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/znap/znap.zsh
 
 # Aliases
+alias docker-compose="docker compose"
 alias dup="docker compose up -d"
 alias ddown="docker compose down"
 alias dsh='f() { docker exec -it $1 bash};f'
@@ -71,3 +72,5 @@ export AWS_PROFILE=transactions-dev
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+. "$HOME/.local/share/../bin/env"

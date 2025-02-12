@@ -7,18 +7,25 @@
 name = "php"
 language-servers = [ "intelephense", "gpt" ]
 
+# python
+[[language]]
+name = "python"
+roots = ["pyproject.toml"]
+language-servers = [ "pyright" ]
+
 
 # Go
 [[language]]
 name = "go"
-language-servers = [ "gopls", "gpt" ]
+# language-servers = [ "gopls", "gpt" ]
+language-servers = [ "gopls"]
 
 ##############
 # LSPs
 ##############
 # PHP
 [language-server.intelephense.config]
-licenceKey = "xxxxx"
+licenceKey = "xxxxxxxxxxxxxxx"
 
 # [language-server.phpactor]
 # command = "phpactor"
@@ -28,5 +35,8 @@ licenceKey = "xxxxx"
 # Install from https://github.com/leona/helix-gpt
 [language-server.gpt]
 command = "helix-gpt"
-args = [ "--handler", "copilot", "--copilotApiKey",  "xxxxxx" ]
+args = [ "--handler", "copilot", "--copilotApiKey",  "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" ]
 
+# uv tool install pyright
+[[ language-servers ]]
+pyright = { command = "pyright-langserver", args = ["--stdio"], config = {} }
