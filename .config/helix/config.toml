@@ -1,5 +1,5 @@
-# theme="catppuccin_mocha"
-theme="gruvbox"
+theme="catppuccin_mocha"
+# theme="gruvbox"
 
 [editor.cursor-shape]
 insert="bar"

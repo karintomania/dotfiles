@@ -244,7 +244,7 @@ keybinds clear-defaults=true {
 // 
 
 pane_frames false
-// theme "catppuccin-mocha"
-theme "gruvbox-dark"
+theme "catppuccin-mocha"
+// theme "gruvbox-dark"
 copy_command "xclip -i -selection clipboard"
 default_mode "locked"
