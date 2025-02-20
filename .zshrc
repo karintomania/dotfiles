@@ -50,6 +50,10 @@ zl() {
     fi
 }
 
+alias git-personal="git config --local user.name karintomania && \
+git config --local user.email 19652340+karintomania@users.noreply.github.com && \
+sed -i 's/git@github\.com/git@github.personal/g' .git/config"
+
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	yazi "$@" --cwd-file="$tmp"
