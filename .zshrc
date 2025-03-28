@@ -3,9 +3,9 @@ PS1='%F{green}%D{%I:%M:%S %p}%f %F{blue}%~%f$ '
 PATH="/usr/local/bin:$HOME/.local/bin/:/usr/local/go/bin:$HOME/go/bin:$PATH:$HOME/.cargo/env"
 
 # enable plugins
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/marlonrichert/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source ~/.zsh/zsh-users/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Znap
 # $ znap status // show status of plugins
