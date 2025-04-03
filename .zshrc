@@ -28,6 +28,7 @@ alias p="cd \$(find ~ -type d -maxdepth 2 | fzf)"
 alias cdf="cd \$(find . -type d -maxdepth 4 | fzf)"
 alias rms='f() { mv $1 ~/.local/share/Trash/files/ }; f'
 alias n="nnn"
+alias ll="ls -lah"
 
 
 alias gblame="tig blame \$(fzf)"
