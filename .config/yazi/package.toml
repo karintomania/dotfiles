@@ -1,5 +1,12 @@
 [plugin]
 deps = []
 
-[flavor]
-deps = [{ use = "yazi-rs/flavors:catppuccin-mocha", rev = "8458d25" }, { use = "bennyyip/gruvbox-dark", rev = "b4cc9f2" }]
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-mocha"
+rev = "8458d25"
+hash = "44ab3265147788a4e780b2060341d65e"
+
+[[flavor.deps]]
+use = "bennyyip/gruvbox-dark"
+rev = "b4cc9f2"
+hash = "f44c42bcbed3c8564100e45e2fe3649a"

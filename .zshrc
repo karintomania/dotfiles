@@ -29,6 +29,7 @@ alias cdf="cd \$(find . -type d -maxdepth 4 | fzf)"
 alias rms='f() { mv $1 ~/.local/share/Trash/files/ }; f'
 alias n="nnn"
 alias ll="ls -lah"
+alias what="echo \$(whoami)@\$(hostname)"
 
 
 alias gblame="tig blame \$(fzf)"
@@ -66,7 +67,7 @@ function y() {
 
 alias -s sh=zsh
 
-export EDITOR='hx'
+export EDITOR='nvim'
 export FZF_DEFAULT_COMMAND="find ."
 export CLICOLOR=1
 export NNN_PLUG="f:fzcd;c:cppath;"
