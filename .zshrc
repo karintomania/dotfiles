@@ -31,6 +31,7 @@ alias n="nnn"
 alias ll="ls -lah"
 alias what="echo \$(whoami)@\$(hostname)"
 
+alias ghpr="gh pr view --web"
 
 alias gblame="tig blame \$(fzf)"
 alias xcp="xclip -selection c"
@@ -73,7 +74,6 @@ export CLICOLOR=1
 export NNN_PLUG="f:fzcd;c:cppath;"
 export NNN_OPTS="H"
 export AWS_PROFILE=transactions-dev
-
 
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
