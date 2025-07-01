@@ -27,6 +27,7 @@ alias nv="nvim"
 alias p="cd \$(find ~ -type d -maxdepth 2 | fzf)"
 alias cdf="cd \$(find . -type d -maxdepth 4 | fzf)"
 alias rms='f() { mv $1 ~/.local/share/Trash/files/ }; f'
+alias rgf='rg --file | rg'
 alias n="nnn"
 alias ll="ls -lah"
 alias what="echo \$(whoami)@\$(hostname)"
