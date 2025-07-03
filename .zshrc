@@ -29,7 +29,7 @@ alias ll="ls -lah"
 alias mkcdir='f() { mkdir -- "$1" && cd -- "$1" }; f'
 alias nv="nvim"
 alias p="cd \$(find ~ -type d -maxdepth 2 | fzf)"
-alias rgf='rg --file | rg'
+alias rgf='rg --files | rg'
 alias rms='f() { mv $1 ~/.local/share/Trash/files/ }; f'
 alias what="echo \$(whoami)@\$(hostname)"
 alias xcp="xclip -selection c"
@@ -69,6 +69,9 @@ alias -s sh=zsh
 export EDITOR='nvim'
 export FZF_DEFAULT_COMMAND="find ."
 export CLICOLOR=1
+
+export SAVEHIST=1000
+export HISTFILE="$HOME/.zsh_history"
 
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
