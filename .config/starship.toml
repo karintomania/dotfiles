@@ -54,42 +54,18 @@ format = '[ $symbol $branch ]($style)'
 
 [git_status]
 style = "sapphire"
-format = '[$all_status$ahead_behind |]($style)'
-
-[nodejs]
-symbol = ""
-style = "fg:teal"
-format = '[ $symbol( $version) |]($style)'
-
-[c]
-symbol = " "
-style = "fg:teal"
-format = '[ $symbol( $version) |]($style)'
-
-[golang]
-symbol = ""
-style = "fg:teal"
-format = '[ $symbol( $version) |]($style)'
-
-[php]
-symbol = ""
-style = "fg:teal"
-format = '[ $symbol( $version) |]($style)'
-
-[python]
-symbol = ""
-style = "fg:teal"
-format = '[ $symbol( $version) ( $virtualenv)|]($style)'
-
-[zig]
-symbol = ""
-style = "fg:teal"
-format = '[ $symbol( $version) |]($style)'
-
-[docker_context]
-symbol = ""
-style = "bg:teal"
-format = '[[ $symbol( $context) ](fg:crust bg:sapphire)]($style)'
+format = '[$conflicted$deleted$renamed$modified$staged$untracked$ahead_behind |]($style)'
+# conflicted =
+# untracked ?
+# stashed $
+# modified !
+# staged +
+# renamed »
+# deleted ✘
+# ahead ⇡
+# behind ⇣
+# diverged ⇕
+up_to_date = '✓'
 
 [status]
 style = "fg:green"
@@ -142,4 +118,40 @@ surface0 = "#313244"
 base = "#1e1e2e"
 mantle = "#181825"
 crust = "#11111b"
+
+[c]
+symbol = " "
+style = "fg:teal"
+format = '[ $symbol( $version) |]($style)'
+
+[golang]
+symbol = ""
+style = "fg:teal"
+format = '[ $symbol( $version) |]($style)'
+
+[nodejs]
+symbol = ""
+style = "fg:teal"
+format = '[ $symbol( $version) |]($style)'
+
+[php]
+symbol = ""
+style = "fg:teal"
+format = '[ $symbol( $version) |]($style)'
+
+[python]
+symbol = ""
+style = "fg:teal"
+format = '[ $symbol( $version) ( $virtualenv)|]($style)'
+
+[zig]
+symbol = ""
+style = "fg:teal"
+format = '[ $symbol( $version) |]($style)'
+
+[docker_context]
+symbol = ""
+style = "bg:teal"
+format = '[[ $symbol( $context) ](fg:crust bg:sapphire)]($style)'
+
 
