@@ -81,3 +81,5 @@ export NVM_DIR="$HOME/.config/nvm"
 ################################
 # Machine Specific goes here   #
 ################################
+source ~/.zshrc.local
+
