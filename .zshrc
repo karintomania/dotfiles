@@ -1,6 +1,7 @@
 # PS1='%n@%m %~$ '
-PS1='%F{green}%D{%I:%M:%S %p}%f %F{blue}%~%f$ '
+# PS1='%F{green}%D{%I:%M:%S %p}%f %F{blue}%~%f$ '
 PATH="/usr/local/bin:$HOME/.local/bin/:/usr/local/go/bin:$HOME/go/bin:$PATH:$HOME/.cargo/env"
+eval "$(starship init zsh)"
 
 # enable plugins
 source ~/.zsh/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
