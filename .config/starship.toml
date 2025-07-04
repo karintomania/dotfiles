@@ -5,17 +5,27 @@ format = """
 $time\
 $directory\
 $git_branch\
-$c\
-$rust\
-$golang\
-$nodejs\
-$php\
-$python\
-$zig\
+$git_status\
 $status\
 $cmd_duration\
 $line_break
 $character"""
+
+# format = """
+# [ ](mauve)\
+# $time\
+# $directory\
+# $git_branch\
+# $c\
+# $golang\
+# $nodejs\
+# $php\
+# $python\
+# $zig\
+# $status\
+# $cmd_duration\
+# $line_break
+# $character"""
 
 palette = 'catppuccin_mocha'
 
@@ -40,7 +50,11 @@ truncation_symbol = "…/"
 [git_branch]
 symbol = ""
 style = "sapphire"
-format = '[ $symbol $branch |]($style)'
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "sapphire"
+format = '[$all_status$ahead_behind |]($style)'
 
 [nodejs]
 symbol = ""
@@ -89,7 +103,7 @@ disabled = true
 
 [cmd_duration]
 show_milliseconds = true
-format = " in $duration "
+format = "󰾆 $duration "
 style = "fg:sky"
 disabled = false
 show_notifications = true
