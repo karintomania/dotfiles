@@ -37,7 +37,7 @@ format = '[ $time |]($style)'
 
 [directory]
 style = "blue"
-format = "[ $path |]($style)"
+format = "[  $path |]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
@@ -71,16 +71,16 @@ up_to_date = '✓'
 style = "fg:green"
 format = '[$symbol]($style)'
 disabled = false
-success_symbol = "[ ✓ ]($style)"
-symbol = "[ ✗ $status ](fg:red)"
+success_symbol = "[  ]($style)"
+symbol = "[  $status ](fg:red)"
 
 [line_break]
 disabled = true
 
 [cmd_duration]
 show_milliseconds = true
-format = "󰾆 $duration "
-style = "fg:sky"
+format = "[ 󰾆 $duration ]($style)"
+style = "fg:rosewater"
 disabled = false
 show_notifications = true
 min_time_to_notify = 45000
