@@ -2,6 +2,7 @@
 
 format = """
 [ ](mauve)\
+$sudo\
 $time\
 $directory\
 $git_branch\
@@ -28,6 +29,11 @@ $character"""
 # $character"""
 
 palette = 'catppuccin_mocha'
+
+[sudo]
+style = 'mauve'
+format = "[]($style)"
+disabled = false
 
 [time]
 disabled = false
@@ -72,7 +78,7 @@ style = "fg:green"
 format = '[$symbol]($style)'
 disabled = false
 success_symbol = "[  ]($style)"
-symbol = "[  $status ](fg:red)"
+symbol = "[  $status $common_meaning](bold fg:red)"
 
 [line_break]
 disabled = true
