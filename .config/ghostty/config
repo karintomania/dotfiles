@@ -8,3 +8,4 @@ window-theme = dark
 # GTK
 gtk-titlebar = true
 gtk-tabs-location = top
+keybind = shift+enter=text:\n

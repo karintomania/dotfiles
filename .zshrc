@@ -35,6 +35,7 @@ alias rms='f() { mv $1 ~/.local/share/Trash/files/ }; f'
 alias what="echo \$(whoami)@\$(hostname)"
 alias xcp="xclip -selection c"
 alias zlj="zellij"
+alias zls="zellij -s $(basename $(pwd))"
 
 alias git-personal="git config --local user.name karintomania && \
 git config --local user.email 19652340+karintomania@users.noreply.github.com && \
@@ -64,6 +65,24 @@ zl() {
         echo "No session selected."
     fi
 }
+
+# Delete a zellij session with fzf
+zld() {
+    # Use fzf to select a session line directly from the output of zellij ls
+    local selected_line=$(zellij ls | fzf --height=10 --border --ansi --prompt="Select session> ")
+    
+    # Extract the session name from the selected line
+    local session_name=$(echo "$selected_line" | awk '{print $1}')
+    
+    # Check if a session name was extracted
+    if [[ -n $session_name ]]; then
+        # Attach to the selected session
+        zellij d -f "$session_name"
+    else
+        echo "No session selected."
+    fi
+}
+
 
 alias -s sh=zsh
 
