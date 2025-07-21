@@ -100,6 +100,9 @@ export NVM_DIR="$HOME/.config/nvm"
 bindkey -v
 export KEYTIMEOUT=1
 
+# Add to fpath and initialize completions
+fpath=(~/.zsh/completions $fpath)
+
 ################################
 # Machine Specific goes here   #
 ################################
