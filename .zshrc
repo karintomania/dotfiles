@@ -3,10 +3,15 @@
 PATH="/usr/local/bin:$HOME/.local/bin/:/usr/local/go/bin:$HOME/go/bin:$PATH:$HOME/.cargo/env"
 eval "$(starship init zsh)"
 
+bindkey -v
+bindkey -M vicmd 'gl' vi-end-of-line
+bindkey -M vicmd 'gh' vi-beginning-of-line
+bindkey -M viins jj vi-cmd-mode
+
 # enable plugins
 source ~/.zsh/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.zsh/marlonrichert/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source ~/.zsh/zsh-users/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/marlonrichert/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # Znap
 # $ znap status // show status of plugins
@@ -97,10 +102,6 @@ export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-bindkey -v
-bindkey -M vicmd 'gl' vi-end-of-line
-bindkey -M vicmd 'gh' vi-beginning-of-line
-bindkey -M viins jj vi-cmd-mode
 
 export KEYTIMEOUT=1
 
