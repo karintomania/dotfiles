@@ -98,6 +98,10 @@ export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 bindkey -v
+bindkey -M vicmd 'gl' vi-end-of-line
+bindkey -M vicmd 'gh' vi-beginning-of-line
+bindkey -M viins jj vi-cmd-mode
+
 export KEYTIMEOUT=1
 
 # Add to fpath and initialize completions
