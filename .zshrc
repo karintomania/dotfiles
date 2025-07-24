@@ -40,7 +40,7 @@ alias rms='f() { mv $1 ~/.local/share/Trash/files/ }; f'
 alias what="echo \$(whoami)@\$(hostname)"
 alias xcp="xclip -selection c"
 alias zlj="zellij"
-alias zls="zellij -s \$(basename \$(pwd))"
+alias zljs="zellij -s \$(basename \$(pwd))"
 
 alias git-personal="git config --local user.name karintomania && \
 git config --local user.email 19652340+karintomania@users.noreply.github.com && \
