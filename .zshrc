@@ -35,6 +35,7 @@ alias ll="ls -lah"
 alias mkcdir='f() { mkdir -- "$1" && cd -- "$1" }; f'
 alias nv="nvim"
 alias p="cd \$(find ~ -type d -maxdepth 2 | fzf)"
+alias dice='LC_CTYPE=C tr -dc 1-6 < /dev/urandom | head -c 1'
 alias rgf='rg --files | rg'
 alias rms='f() { mv $1 ~/.local/share/Trash/files/ }; f'
 alias what="echo \$(whoami)@\$(hostname)"
