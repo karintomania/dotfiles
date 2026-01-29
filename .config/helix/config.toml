@@ -1,9 +1,11 @@
 theme="catppuccin_mocha"
 # theme="gruvbox"
 
+[editor]
+auto-pairs = false
+
 [editor.cursor-shape]
 insert="bar"
-
 
 [editor.whitespace.render]
 newline = "all"
