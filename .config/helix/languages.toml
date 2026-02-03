@@ -5,7 +5,12 @@
 # PHP
 [[language]]
 name = "php"
+roots = ["composer.json", "index.php"]
+
 language-servers = [ "intelephense", "gpt" ]
+# language-servers = [ "phpactor" ]
+
+
 
 # python
 [[language]]
