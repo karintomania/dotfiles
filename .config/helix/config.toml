@@ -24,7 +24,7 @@ space = "none"
 # R = "replace_selections_with_clipboard"
 # d = ["yank_to_clipboard", "delete_selection_noyank"]
 # Copy relative file path
-C-f = [":sh echo %{buffer_name} | pbcopy"]
+C-f = [":sh /bin/echo -n %{buffer_name} | pbcopy"]
 
 # Delete to the end of line
 D = ["select_mode", "goto_line_end", "delete_selection"]
